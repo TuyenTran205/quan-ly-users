@@ -1,34 +1,47 @@
 {
   "users": [
     {
-      "id": "1",
-      "fullName": "Nguyễn Văn A",
-      "email": "nguyenvana@example.com",
-      "position": "Frontend Developer",
-      "department": "Kỹ thuật",
+      "fullName": "Trần Văn Tuyên",
+      "email": "tuyenthe431@gmail.com",
+      "position": "FE",
+      "department": "Kỹ Thuật",
+      "hometown": "Thanh Hóa",
+      "dateOfBirth": "2005-10-21",
+      "startDate": "2026-07-13",
+      "id": "Pz6ED80AfzE"
+    },
+    {
+      "fullName": "Trần Vĩnh Bảo",
+      "email": "ht4309663@gmail.com",
+      "position": "BE",
+      "department": "Kỹ Thuật",
       "hometown": "Hà Nội",
-      "dateOfBirth": "1998-05-15",
-      "startDate": "2023-01-10"
+      "dateOfBirth": "2016-01-21",
+      "startDate": "2026-07-23",
+      "id": "7SHPGbrp6GY"
+    }
+  ],
+  "todos": [
+    {
+      "id": "1",
+      "title": "Học TypeScript cơ bản",
+      "completed": false
     },
     {
       "id": "2",
-      "fullName": "Trần Thị B",
-      "email": "tranthib@example.com",
-      "position": "HR Specialist",
-      "department": "Nhân sự",
-      "hometown": "Thanh Hóa",
-      "dateOfBirth": "2005-10-21",
-      "startDate": "2026-04-01"
+      "title": "Tạo API Service với Fetch và Async/Await",
+      "completed": true
     },
     {
       "id": "3",
-      "fullName": "Lê Văn C",
-      "email": "levanc@example.com",
-      "position": "Project Manager",
-      "department": "Quản lý Dự án",
-      "hometown": "Đà Nẵng",
-      "dateOfBirth": "1995-12-02",
-      "startDate": "2021-08-15"
+      "title": "Hoàn thiện giao diện To-Do List với Bootstrap 5",
+      "completed": false
+    },
+    {
+      "title": "Code Typescript cơ bản với ToDoList",
+      "completed": true,
+      "id": "CZSjOdt93L4"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

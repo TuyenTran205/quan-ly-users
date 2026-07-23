@@ -1,6 +1,6 @@
 export class UserService {
     constructor() {
-        this.baseUrl = 'http://localhost:3000/users';
+        this.baseUrl = "http://localhost:3000/users";
     }
     async getAllUsers() {
         try {
@@ -11,7 +11,7 @@ export class UserService {
             return await response.json();
         }
         catch (error) {
-            console.error('Error fetching users:', error);
+            console.error("Error fetching users:", error);
             throw error;
         }
     }
@@ -31,9 +31,9 @@ export class UserService {
     async createUser(user) {
         try {
             const response = await fetch(this.baseUrl, {
-                method: 'POST',
+                method: "POST",
                 headers: {
-                    'Content-Type': 'application/json',
+                    "Content-Type": "application/json",
                 },
                 body: JSON.stringify(user),
             });
@@ -43,16 +43,16 @@ export class UserService {
             return await response.json();
         }
         catch (error) {
-            console.error('Error creating user:', error);
+            console.error("Error creating user:", error);
             throw error;
         }
     }
     async updateUser(id, user) {
         try {
             const response = await fetch(`${this.baseUrl}/${id}`, {
-                method: 'PATCH',
+                method: "PATCH",
                 headers: {
-                    'Content-Type': 'application/json',
+                    "Content-Type": "application/json",
                 },
                 body: JSON.stringify(user),
             });
@@ -69,7 +69,7 @@ export class UserService {
     async deleteUser(id) {
         try {
             const response = await fetch(`${this.baseUrl}/${id}`, {
-                method: 'DELETE',
+                method: "DELETE",
             });
             if (!response.ok) {
                 throw new Error(`Failed to delete user with id ${id}: ${response.statusText}`);
